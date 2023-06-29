@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+  font-family: 'Ubuntu', sans-serif;
+  align-items: center;
+  margin: 0;
+  text-decoration: none;
+  padding: 0;
+  transition: 1s;
+  color: #fff;
+  font-weight: 400;
+}
+
+body {
+  background: #111;
+}
+
+.landing {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+}
+
+span {
+  color: blueviolet;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 70px;
+  border-bottom: 2px blueviolet solid;
+}
+
+a:hover {
+  color: blueviolet;
+  text-decoration: underline blueviolet;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: blueviolet;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+button {
+  width: 80px;
+  height: 25px;
+  background: none;
+  margin-top: 10px;
+  color: blueviolet;
+  border: 2px blueviolet solid;
+  border-radius: 2px;
+}
+
+@media (max-width: 900px) {
+  .nav {
+    display: none;
+  }
+
+  .landing img {
+    width: 400px;
+  }
+  .about img{
+    width: 200px;
+  }
+  .about p{
+    font-size: 12px
+  }
+  header {
+    display: flex !important;
+  }
+}
+
+button:hover {
+  color: #111;
+  background: blueviolet;
+}
+
+.sb {
+  background: #112;
+  display: none;
+  bottom: 0;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  z-index: 99999;
+}
+
+#show {
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+header {
+  border-bottom: 1px blueviolet solid;
+  height: 70px;
+  display: none;
+}
+
+@media (max-width: 1440px) {
+  header {
+    display: none;
+  }
+}
+.about{
+display: flex;
+align-items: center;
+}
+.sb img{
+  border: 1.60px blueviolet solid;
+}
+.skills{
+  align-items: center;
+  margin-left: 10%;
+  display: flex;
+  justify-content: space-around;
+}
+.skills img{
+  opacity: 0.70;
+}
+.skills img:hover{
+  opacity: 1;
+}
+html{
+  scroll-behavior: smooth;
+}
+ .p{
+     flex-wrap: wrap;
+     display: flex;
+    align-items: center;
+    justify-content: space-around;
+   margin-left: 7%;   
+   }
+   .card{
+     height: 420px;
+     width: 250px;
+     border-radius: 5px;
+     background: #112;
+     border: 1px solid blueviolet;
+     box-shadow: 5px 5px 5px #222;
+     margin-top: 22px;
+   }
+   .crad h3{
+     margin-left: 500px;
+   }
+  .card img:hover{
+	opacity: 1;
+}
+.card img {
+	width: 170px;
+	opacity: 0.50;
+	height: 220px;
+	border: 1px blueviolet solid;
+	margin-left: 37px;
+	transform: none;
+	border-radius: 5px;
+	
+}
+.card button{
+  margin-left: 90px;
+  width: 60px;
+  transform: none;
+}
+.card a:hover{
+  background: none;
+}
+.card p{
+  margin-left: 60px;
+}
