@@ -71,24 +71,72 @@
       </ul>
     <img src="memo.jpg" width="40%">
   </div>
-  <br><br><br>
+  <br><br><br><br><br>
   <h1 class="h1" align="center"><span style="font-size:40px;">A</span>bout Me</h1>
-  <div align="center" id="about" class="about">
-    <img src="about.png" style="margin-left:20px;" width="300px">
-    <p>Hello my name is Mohamed Waleed i'm front-end developer, I Learned html, css, js, jquery, bootstrap and i learn php. I live in Abour, Qalyubia, Egypt. I have 12 years old.</p>
+  <center>
+  <div id="about" class="about">
+    <img src="Picsart_23-06-29_04-18-59-987.png" width="250px">
+    <p>Hello my name is <span>Mohamed Waleed</span> i'm front-end developer, I Learned html, css, js, jquery, bootstrap and i learn php. I live in Abour, Qalyubia, Egypt. I have 12 years old.</p>
   </div>
+  </center>
   <br><br>
-  <h1 class="h1" align="center"><span style="font-size:40px;">S</span>kills</h1>
-  <div id="skill" class="skills">
-    <img src="html5.png" width="20%">
-    <img src="img.png" width="20%">
-    <img src="1200px-Javascript-shield.svg.png" width="18%">
-  </div>
-  <div align="center" class="cards">
-    <img src="free-jquery-10-1175155.png" width="20%">
-    <img src="2560px-Bootstrap_logo.svg.png" width="20%">
-  </div>
+  <h1 align="center"><span style="font-size:40px;">S</span>kills</h1>
+    <section id="skills">
+      <div class="content">
+        <div class="skillss">
+          <div class="skill">
+            <br>
+            <span class="htmlbar">HTML</span><br>
+            <div class="bar"></div>
+            <div class="activebar" id="bar1"></div>
+          </div>
+          <div class="skill">
+            <span class="cssbar">CSS</span><br>
+            <div class="bar"></div>
+            <div class="activebar" id="bar2"></div>
+          </div>
+          <div class="skill">
+            <span class="jsbar">JavaScript</span><br>
+            <div class="bar"></div>
+            <div class="activebar" id="bar3"></div>
+          </div>
+<div class="skill">
+            <span class="bsbar">Bootstrap</span><br>
+            <div class="bar"></div>
+            <div class="activebar" id="bar4"></div>
+        </div>
+<div class="skill">
+            <span class="jqbar">Bootstrap</span><br>
+            <div class="bar"></div>
+            <div class="activebar" id="bar5"></div>
+        </div>
+      </div>
+      <h1 class="bgskill">Skills</h1>
+      <div class="circle4"></div>
+      <div class="circle5"></div>
+    </section>
+    <br>
+    <br>
+    <br>
   <br><br><br>
+  <h1 align="center"><span style="font-size:40px;">S</span>ervices</h1>
+  <div class="s">
+    <div align="center" class="cardd">
+      <br>
+      <img src="web-icon-white-3.jpg" alt="">
+      <h3>Web Developer</h3>
+    </div>
+    <div align="center" class="cardd"><br>
+      <img src="website-design-3-xxl.png" alt="">
+      <h3>Graphic Designer</h3>
+    </div>
+  </div>
+  
+  
+  <br><br><br>
+  
+  <!-- projects -->
+  
   <h1 align="center"><span style="font-size:40px;">P</span>rojects</h1>
    <div id="p" class="p">
      <div class="card">
@@ -130,5 +178,28 @@
     <center style="background:black;height:100px;" id="footer"><br>
       <h4>copyright by Mohamed Waleed ©️ in 2023.</h4>
       <br>
+<script>
+const htmlbar = document.getElementById('bar1')
+cssbar = document.getElementById('bar2')
+jsbar = document.getElementById('bar3')
+bsbar = document.getElementById('bar4')
+jqbar = document.getElementById('bar5')
+about = document.getElementById('about')
+window.addEventListener('scroll', () => {
+  if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 500) {
+    htmlbar.classList.add('activehtml')
+    cssbar.classList.add('activecss')
+    jsbar.classList.add('activejs')
+    bsbar.classList.add('activebs')
+    jqbar.classList.add('activejq')
+    
+  }
+})
+window.addEventListener('scroll', () => {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 250) {
+  document.querySelector(".about").style.display ="flex";
+  }
+})
+</script>
 </body>
-</html>
+  </html>
