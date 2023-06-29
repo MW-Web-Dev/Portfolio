@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 * {
   font-family: 'Ubuntu', sans-serif;
@@ -82,7 +82,7 @@ button {
     width: 400px;
   }
   .about img{
-    width: 200px;
+    width: 230px;
   }
   .about p{
     font-size: 12px
@@ -125,7 +125,24 @@ header {
 }
 .about{
 display: flex;
+border: 1px blueviolet solid;
 align-items: center;
+height: 200px;
+justify-content: space-around;
+width: 400px;
+box-shadow: 5px 5px 5px #222;
+border-radius: 2px;
+padding: 5px 5px;
+animation: an 1.50s ease-in-out;
+display: none ;
+}
+@keyframes an{
+  from{
+    width: 300px;
+    
+  }to{
+    width:400px;
+  }
 }
 .sb img{
   border: 1.60px blueviolet solid;
@@ -152,6 +169,12 @@ html{
     justify-content: space-around;
    margin-left: 7%;   
    }
+   .s{
+     display: flex;
+    align-items: center;
+    justify-content: space-around;
+     margin-left: 2%;   
+   }
    .card{
      height: 420px;
      width: 250px;
@@ -168,11 +191,11 @@ html{
 	opacity: 1;
 }
 .card img {
-	width: 170px;
+	width: 180px;
+	margin-left: 35px;
 	opacity: 0.50;
 	height: 220px;
 	border: 1px blueviolet solid;
-	margin-left: 37px;
 	transform: none;
 	border-radius: 5px;
 	
@@ -188,3 +211,129 @@ html{
 .card p{
   margin-left: 60px;
 }
+
+   .cardd{
+     height: 300px;
+     width: 170px;
+     border-radius: 5px;
+     background: #112;
+     border: 1px solid blueviolet;
+     box-shadow: 5px 5px 5px #222;
+     margin-top: 22px;
+   }
+  .cardd img:hover{
+	opacity: 1;
+}
+.cardd img {
+	width: 130px;
+	opacity: 0.50;
+	transform: none;
+	border-radius: 5px;
+	
+}
+.cardd button{
+  margin-left: 90px;
+  width: 60px;
+  transform: none;
+}
+#skills {
+  margin-left: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.content {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  margin-top: 0px;
+}
+
+.skillss{
+  padding: 20px 20px;
+  padding-top: 0;
+  border-radius: 10px;
+  margin-top: 15%;
+  margin-left: 25%;
+  background: #112;
+  width:240px;
+  height: 220px;
+}
+.skill {
+  margin-top: 10px;
+  position: relative;
+}
+
+.skill span {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.htmlbar {
+  color: #ED6915;
+}
+.bsbar{
+  color: blueviolet;
+}
+.jqbar{
+  color: orange;
+}
+.cssbar {
+  color: #4269F5;
+}
+
+.jsbar {
+  color: #D5D649;
+}
+
+.bar {
+  background-color: #fff;
+  width: 50%;
+  height: 10px;
+  border-radius: 20px;
+}
+
+.activebar {
+  width: 0px;
+  height: 10px;
+  border-radius: 20px;
+  position: absolute;
+  transform: translateY(-10px);
+  transition: width 0.5s;
+}
+
+.activehtml {
+  width: 250px;
+  background-color: #ED6915;
+}
+
+.activecss {
+  width: 200px;
+  background-color: #4269F5;
+}
+
+.activejs {
+  width: 150px;
+  background-color: #D5D649
+}
+.activebs{
+  background-color: blueviolet;
+  width: 130px;
+}
+.activejq{
+  width: 120px;
+  background-color: orange;
+}
+.bgskill {
+  transform: rotate(90deg) translateY(40px);
+  left: 0;
+  top: 120px;
+  position: absolute;
+  font-size: 80px;
+  opacity: 0.3;
+  color: #1f67db;
+  z-index: -10;
+	}
